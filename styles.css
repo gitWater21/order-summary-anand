@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Red Hat Display", sans-serif;
+}
+.my_flex{
+ display: flex;
+ align-items: center;
+}
+:root{
+ --pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+
+--ery-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+.container{
+ width: 350px;
+ height: fit-content;
+ margin: 0 auto 0 auto;
+ margin-top: 7%;
+ background-color: white;
+ border-radius: 20px;
+}
+
+.inner-container{
+ width: 280px;
+ margin: auto;
+ /* background-color: skyblue; */
+ text-align: center;
+ padding-block: 25px;
+}
+.inner-container p{
+ width: 270px;
+ margin: auto;
+ line-height: 30px;
+ color: var(--desaturated-blue);
+}
+.inner-container h1{
+
+ color: var(--dark-blue);
+}
+small{
+ color: rgb(130, 127, 127);
+}
+.inner-container p{
+ margin-top: 20px;
+}
+
+.inner-container .plan-box{
+ margin-top: 20px;
+}
+.plan-box{
+ justify-content: space-between;
+ background-color: hsl(240, 25%, 97%);
+ border-radius: 10px;
+ padding: 6px 6px;
+}
+body{
+ font-size: 16px;
+background-color: var(--pale-blue);
+background-image: url(./pattern-background-desktop.svg);
+background-repeat: no-repeat;
+background-size: 100%;
+}
+.sub-plan b{
+ color: var(--dark-blue);
+}
+a{
+ color: var(--bright-blue);
+}
+.img-box img{
+ width: 100%;
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+}
+
+.btn-box{
+ flex-direction: column;
+ gap: 30px;
+ margin-top: 25px;
+
+}
+.s-btn{
+ width: 100%;
+ height: 45px;
+ color: var(--pale-blue);
+ background-color: var(--bright-blue);
+ border: none;
+ border-radius: 10px;
+ font-weight: 900;
+ box-shadow: 0px 5px 30px rgb(127, 127, 243);
+ cursor: pointer;
+}
+.c-btn{
+ border: none;
+ background-color: transparent;
+ font-weight: 900;
+ cursor: pointer;
+ color: var(--desaturated-blue);
+}
+
+
+@media screen and (width <= 375px) {
+ .inner-container h1{
+
+ font-weight: 900;
+}
+.inner-container p{
+ font-weight: 700;
+}
+body{
+ background-image: url(./pattern-background-mobile.svg);
+ background-repeat: no-repeat;
+ background-size: 100%;
+}
+}
+
+
